@@ -1,0 +1,28 @@
+PODS:
+  - Flutter (1.0.0)
+  - local_image_pager (0.0.1):
+    - Flutter
+  - "permission_handler (5.0.1+1)":
+    - Flutter
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - local_image_pager (from `.symlinks/plugins/local_image_pager/ios`)
+  - permission_handler (from `.symlinks/plugins/permission_handler/ios`)
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  local_image_pager:
+    :path: ".symlinks/plugins/local_image_pager/ios"
+  permission_handler:
+    :path: ".symlinks/plugins/permission_handler/ios"
+
+SPEC CHECKSUMS:
+  Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
+  local_image_pager: 2d2eb2f25354bbc06c6afb44873a7473a1ba2a06
+  permission_handler: eac8e15b4a1a3fba55b761d19f3f4e6b005d15b6
+
+PODFILE CHECKSUM: aafe91acc616949ddb318b77800a7f51bffa2a4c
+
+COCOAPODS: 1.9.1

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/local_image_pager.iml" filepath="$PROJECT_DIR$/local_image_pager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android/local_image_pager_android.iml" filepath="$PROJECT_DIR$/android/local_image_pager_android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/example/android/local_image_pager_example_android.iml" filepath="$PROJECT_DIR$/example/android/local_image_pager_example_android.iml" />
+    </modules>
+  </component>
+</project>
