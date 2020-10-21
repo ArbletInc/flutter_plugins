@@ -27,7 +27,7 @@ class LocalImagePagerPlugin: FlutterPlugin, MethodCallHandler {
   }
 
   override fun onMethodCall(@NonNull call: MethodCall, @NonNull result: Result) {
-    if (call.method == "gettotalNumber") {
+    if (call.method == "getTotalNumber") {
       totalNumber(result)
     } else if (call.method == "getLatestImages") {
       fetchPhotos(call.argument("start") as Int?, call.argument("end") as Int?, result)

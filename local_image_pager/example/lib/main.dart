@@ -20,7 +20,7 @@ class LocalImagePagerDemo extends StatefulWidget {
 }
 
 /// How many images you want to fetch per 1 page.
-const per_load_count = 50;
+const per_load_count = 30;
 
 /// GridView's crossAxisCount.
 const cross_axis_count = 4;
@@ -53,22 +53,14 @@ class _LocalImagePagerDemoState extends State<LocalImagePagerDemo> {
     return true;
   }
 
-  Future<PermissionStatus> _requestPermission(Permission p) async {
-    var status = await p.status;
-    if (status != PermissionStatus.granted) {
-      return await p.request();
-    } else {
-      return status;
-    }
-  }
-
   @override
   Widget build(BuildContext context) {
     // Calculate the thumbnail's size first to improve performance.
-    final cacheHight = ((MediaQuery.of(context).size.width -
+    final itemSize = ((MediaQuery.of(context).size.width -
         spacing * (cross_axis_count - 1) - horizontal_padding * 2) /
-        cross_axis_count)
-        .round();
+        cross_axis_count);
+
+    final cacheSize = (itemSize * 1.5).round();
 
     final pager = LocalImagePager();
 
@@ -106,7 +98,7 @@ class _LocalImagePagerDemoState extends State<LocalImagePagerDemo> {
                                 itemCount: count,
                                 itemBuilder: (context, index) =>
                                     _itemBuilder(
-                                        pager, count, index, cacheHight));
+                                        pager, count, index, itemSize, cacheSize));
                           }
                         } else if (snapshot.hasError) {
                           return Center(
@@ -153,7 +145,7 @@ class _LocalImagePagerDemoState extends State<LocalImagePagerDemo> {
   }
 
   Widget _itemBuilder(
-      LocalImagePager paginate, int totalNumber, int index, int cacheHight) {
+      LocalImagePager paginate, int totalNumber, int index, double itemSize, int cacheSize) {
     _load(paginate, totalNumber, index);
 
     return FutureBuilder(
@@ -163,8 +155,8 @@ class _LocalImagePagerDemoState extends State<LocalImagePagerDemo> {
           return Image.file(
             File(snapshot.data),
             fit: BoxFit.cover,
-            height: cacheHight.toDouble(),
-            cacheHeight: cacheHight * 2,
+            height: itemSize,
+            cacheHeight: cacheSize,
           );
         } else if (snapshot.hasError) {
           print('_itemBuilder:error:${snapshot.error.toString()}');

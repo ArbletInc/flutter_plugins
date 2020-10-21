@@ -14,7 +14,7 @@ public class SwiftLocalImagePagerPlugin: NSObject, FlutterPlugin {
     }
 
     public func handle(_ call: FlutterMethodCall, result: @escaping FlutterResult) {
-        if call.method == "gettotalNumber" {
+        if call.method == "getTotalNumber" {
             let options = PHFetchOptions()
             options.includeHiddenAssets = true
             let allPhotos = PHAsset.fetchAssets(with: .image, options: options)

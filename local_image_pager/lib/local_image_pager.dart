@@ -12,7 +12,7 @@ class LocalImagePager {
 
   /// The total number of images in your device.
   static Future<int> get totalNumber async {
-    return await _channel.invokeMethod('gettotalNumber');
+    return await _channel.invokeMethod('getTotalNumber');
   }
 
   /// Fetches the local images from [start] index to [end] index, order by date desc.
