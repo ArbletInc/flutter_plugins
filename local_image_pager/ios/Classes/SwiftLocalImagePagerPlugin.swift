@@ -48,6 +48,7 @@ public class SwiftLocalImagePagerPlugin: NSObject, FlutterPlugin {
         
         let options = PHFetchOptions()
         options.includeHiddenAssets = true
+        options.sortDescriptors = [NSSortDescriptor(key:"creationDate", ascending: false)]
         let allPhotos = PHAsset.fetchAssets(with: .image, options: options)
         var photosJson = [String?]()
         DispatchQueue.global(qos: .background).async { [weak self] in
