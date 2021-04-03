@@ -60,7 +60,7 @@ public class SwiftLocalImagePagerPlugin: NSObject, FlutterPlugin {
                     }
                     
                     asset.requestContentEditingInput(with: options, completionHandler: { (contentEditingInput, info) in
-                        photosJson.append(contentEditingInput!.fullSizeImageURL?.path)
+                        photosJson.append(contentEditingInput?.fullSizeImageURL?.path)
                         if photosJson.count == total {
                             result( photosJson )
                         }
