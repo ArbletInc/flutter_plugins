@@ -1,3 +1,6 @@
+## [0.5.3] - 4 April 2021
+Fixed iOS crush issue.
+
 ## [0.5.2] - 4 April 2021
 Fixed iOS crush issue.
 

@@ -44,32 +44,34 @@ public class SwiftLocalImagePagerPlugin: NSObject, FlutterPlugin {
         }
 
         let indexSet = IndexSet(Array(start...end))
-        let total = end - start + 1
         
-        let options = PHFetchOptions()
-        options.includeHiddenAssets = true
-        options.sortDescriptors = [NSSortDescriptor(key:"creationDate", ascending: false)]
-        let allPhotos = PHAsset.fetchAssets(with: .image, options: options)
+        let phOptions = PHFetchOptions()
+        phOptions.includeHiddenAssets = false
+        
+        phOptions.predicate = NSPredicate(format: "mediaType = %d", PHAssetMediaType.image.rawValue)
+
+        phOptions.sortDescriptors = [NSSortDescriptor(key:"creationDate", ascending: false)]
+
+        
+                let allPhotos = PHAsset.fetchAssets(with: .image, options: phOptions)
         var photosJson = [String?]()
-        DispatchQueue.global(qos: .background).async { [weak self] in
-            allPhotos.enumerateObjects(at: indexSet, options: NSEnumerationOptions.concurrent, using: { (asset, count, stop) in
-                if ( asset.mediaType == PHAssetMediaType.image) {
-                    let options: PHContentEditingInputRequestOptions = PHContentEditingInputRequestOptions()
-                    options.canHandleAdjustmentData = {(adjustmeta: PHAdjustmentData) -> Bool in
-                        return true
-                    }
-                    
-                    asset.requestContentEditingInput(with: options, completionHandler: { (contentEditingInput, info) in
-                        photosJson.append(contentEditingInput?.fullSizeImageURL?.path)
-                        if photosJson.count == total {
-                            result( photosJson )
-                        }
-                    })
+
+        let options: PHContentEditingInputRequestOptions = PHContentEditingInputRequestOptions()
+        options.canHandleAdjustmentData = {(adjustmeta: PHAdjustmentData) -> Bool in
+            return true
+        }
+
+        let items = allPhotos.objects(at: indexSet)
+        let itemsCount = items.count
+
+        for asset in items {
+            asset.requestContentEditingInput(with: options, completionHandler: { (contentEditingInput, info) in
+                NSLog("\n path:\(contentEditingInput?.fullSizeImageURL):\(contentEditingInput?.fullSizeImageURL?.path)")
+                photosJson.append(contentEditingInput?.fullSizeImageURL?.path)
+                if photosJson.count == itemsCount {
+                    result( photosJson )
                 }
-                
             })
         }
-        
     }
-
 }
