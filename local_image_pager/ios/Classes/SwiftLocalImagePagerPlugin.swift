@@ -43,18 +43,24 @@ public class SwiftLocalImagePagerPlugin: NSObject, FlutterPlugin {
             return
         }
 
-        let indexSet = IndexSet(Array(start...end))
-        
         let phOptions = PHFetchOptions()
         phOptions.includeHiddenAssets = false
         
         phOptions.predicate = NSPredicate(format: "mediaType = %d", PHAssetMediaType.image.rawValue)
 
         phOptions.sortDescriptors = [NSSortDescriptor(key:"creationDate", ascending: false)]
-
         
-                let allPhotos = PHAsset.fetchAssets(with: .image, options: phOptions)
+        let allPhotos = PHAsset.fetchAssets(with: .image, options: phOptions)
         var photosJson = [String?]()
+        
+            let indexSet = IndexSet(integersIn: start ..< end)
+//        var indexSet: IndexSet
+//        let total = allPhotos.count
+//        if (total < start + end) {
+//            let indexSet = IndexSet(integersIn: start ..< end)
+//        } else {
+//            indexSet = IndexSet(Array(start...end))
+//        }
 
         let options: PHContentEditingInputRequestOptions = PHContentEditingInputRequestOptions()
         options.canHandleAdjustmentData = {(adjustmeta: PHAdjustmentData) -> Bool in
