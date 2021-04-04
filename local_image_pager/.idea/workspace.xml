@@ -9,6 +9,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7311622e-3795-4fca-929d-db3a78f6cf43" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/example/lib/parts_grid_pic.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.pbxproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/main.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.lock" afterDir="false" />
@@ -105,7 +106,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617538533694</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Fixed iOS crush issue.">
+      <created>1617539006086</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1617539006086</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -127,10 +135,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="Fixed iOS crush issue." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="238" y="23" key="CommitChangelistDialog2" timestamp="1617538533416">
+    <state x="238" y="23" key="CommitChangelistDialog2" timestamp="1617539005805">
       <screen x="0" y="23" width="1440" height="811" />
     </state>
-    <state x="238" y="23" key="CommitChangelistDialog2/0.23.1440.811@0.23.1440.811" timestamp="1617538533416" />
+    <state x="238" y="23" key="CommitChangelistDialog2/0.23.1440.811@0.23.1440.811" timestamp="1617539005805" />
     <state x="144" y="93" key="DiffContextDialog" timestamp="1617538530027">
       <screen x="0" y="23" width="1440" height="811" />
     </state>
@@ -151,10 +159,10 @@
       <screen x="0" y="23" width="1440" height="811" />
     </state>
     <state width="1398" height="473" key="GridCell.Tab.0.right/0.23.1440.811@0.23.1440.811" timestamp="1617517888559" />
-    <state x="320" y="168" key="Vcs.Push.Dialog.v2" timestamp="1617538534879">
+    <state x="320" y="168" key="Vcs.Push.Dialog.v2" timestamp="1617539007589">
       <screen x="0" y="23" width="1440" height="811" />
     </state>
-    <state x="320" y="168" key="Vcs.Push.Dialog.v2/0.23.1440.811@0.23.1440.811" timestamp="1617538534879" />
+    <state x="320" y="168" key="Vcs.Push.Dialog.v2/0.23.1440.811@0.23.1440.811" timestamp="1617539007589" />
     <state x="610" y="186" width="615" height="490" key="find.popup" timestamp="1610609541576">
       <screen x="0" y="23" width="1440" height="811" />
     </state>
