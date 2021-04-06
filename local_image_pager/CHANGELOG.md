@@ -1,3 +1,6 @@
+## [0.6.0] - 6 April 2021
+Migrated to null safety.
+
 ## [0.5.6] - 4 April 2021
 Fixed iOS crush issue.
 

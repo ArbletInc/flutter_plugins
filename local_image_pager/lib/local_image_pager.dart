@@ -11,12 +11,12 @@ class LocalImagePager {
   final _lock = synchronized.Lock();
 
   /// The total number of images in your device.
-  static Future<int> get totalNumber async {
+  static Future<int?> get totalNumber async {
     return await _channel.invokeMethod('getTotalNumber');
   }
 
   /// Fetches the local images from [start] index to [end] index, order by date desc.
-  Future<List<String>> latestImages(int start, int end) =>
+  Future<List<String>?> latestImages(int start, int end) =>
       _lock.synchronized(() async {
         final photos = await _channel
             .invokeMethod('getLatestImages', {'start': start, 'end': end});

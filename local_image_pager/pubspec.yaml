@@ -1,16 +1,16 @@
 name: local_image_pager
 description: A plugin for showing your device's local images with pagination.
-version: 0.5.6
+version: 0.6.0
 homepage: https://github.com/ArbletInc/flutter_local_image_pager/tree/master/local_image_pager
 
 environment:
-  sdk: ">=2.7.0 <3.0.0"
+  sdk: '>=2.12.0 <3.0.0'
   flutter: ">=1.20.0 <2.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
-  synchronized: ^2.2.0+2
+  synchronized: ^3.0.0
 
 dev_dependencies:
   flutter_test:
