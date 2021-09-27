@@ -6,15 +6,35 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="NONE" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="7311622e-3795-4fca-929d-db3a78f6cf43" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
+    <list default="true" id="7311622e-3795-4fca-929d-db3a78f6cf43" name="Default Changelist" comment="Migrated to null safety">
+      <change afterPath="$PROJECT_DIR$/../.idea/flutter_plugins.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Podfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Podfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.xcworkspace/contents.xcworkspacedata" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.xcworkspace/contents.xcworkspacedata" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/local_image_pager.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/local_image_pager.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/SwiftLocalImagePagerPlugin.swift" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Classes/SwiftLocalImagePagerPlugin.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +69,7 @@
       <recent name="$PROJECT_DIR$/example/lib" />
     </key>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -116,7 +137,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617539006086</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Migrated to null safety">
+      <created>1617684482941</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1617684482942</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -142,6 +170,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
@@ -149,7 +178,8 @@
     <MESSAGE value="flutter pub publish --dry-run" />
     <MESSAGE value="Fixed iOS photo order." />
     <MESSAGE value="Fixed iOS crush issue." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed iOS crush issue." />
+    <MESSAGE value="Migrated to null safety" />
+    <option name="LAST_COMMIT_MESSAGE" value="Migrated to null safety" />
   </component>
   <component name="WindowStateProjectService">
     <state x="238" y="23" key="CommitChangelistDialog2" timestamp="1617539005805">
@@ -176,10 +206,15 @@
       <screen x="0" y="23" width="1440" height="811" />
     </state>
     <state width="1398" height="473" key="GridCell.Tab.0.right/0.23.1440.811@0.23.1440.811" timestamp="1617517888559" />
-    <state x="320" y="168" key="Vcs.Push.Dialog.v2" timestamp="1617539007589">
-      <screen x="0" y="23" width="1440" height="811" />
+    <state x="422" y="140" key="RollbackChangesDialog" timestamp="1617684432918">
+      <screen x="0" y="25" width="1440" height="813" />
+    </state>
+    <state x="422" y="140" key="RollbackChangesDialog/0.25.1440.813@0.25.1440.813" timestamp="1617684432918" />
+    <state x="320" y="170" key="Vcs.Push.Dialog.v2" timestamp="1617684484922">
+      <screen x="0" y="25" width="1440" height="813" />
     </state>
     <state x="320" y="168" key="Vcs.Push.Dialog.v2/0.23.1440.811@0.23.1440.811" timestamp="1617539007589" />
+    <state x="320" y="170" key="Vcs.Push.Dialog.v2/0.25.1440.813@0.25.1440.813" timestamp="1617684484922" />
     <state x="610" y="186" width="615" height="490" key="find.popup" timestamp="1610609541576">
       <screen x="0" y="23" width="1440" height="811" />
     </state>

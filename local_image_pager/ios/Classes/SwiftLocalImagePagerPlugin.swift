@@ -57,6 +57,10 @@ public class SwiftLocalImagePagerPlugin: NSObject, FlutterPlugin {
         var indexSet: IndexSet
         let total = allPhotos.count - 1
         if (total < end) {
+            if (start > total) {
+                result( photosJson )
+                return
+            }
             indexSet = IndexSet(integersIn: start...total)
         } else {
             indexSet = IndexSet(Array(start...end))
