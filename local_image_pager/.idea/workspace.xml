@@ -7,34 +7,20 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
+    <expand />
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7311622e-3795-4fca-929d-db3a78f6cf43" name="Default Changelist" comment="Migrated to null safety">
-      <change afterPath="$PROJECT_DIR$/../.idea/flutter_plugins.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+    <list default="true" id="7311622e-3795-4fca-929d-db3a78f6cf43" name="Default Changelist" comment="Fixed iOS crush issue.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Podfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Podfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.xcworkspace/contents.xcworkspacedata" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.xcworkspace/contents.xcworkspacedata" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/kotlin/com/arblet/local_image_pager/LocalImagePagerPlugin.kt" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/kotlin/com/arblet/local_image_pager/LocalImagePagerPlugin.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Classes/SwiftLocalImagePagerPlugin.swift" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Classes/SwiftLocalImagePagerPlugin.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +130,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617684482942</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Fixed iOS crush issue.">
+      <created>1632748622277</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1632748622277</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -163,11 +156,41 @@
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:/Users/kunugisayuri/StudioProjects/flutter_plugins/local_image_pager" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State />
           </value>
         </entry>
+      </map>
+    </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="1" value="TOOL_WINDOW" />
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
@@ -177,47 +200,42 @@
     <MESSAGE value="self review" />
     <MESSAGE value="flutter pub publish --dry-run" />
     <MESSAGE value="Fixed iOS photo order." />
-    <MESSAGE value="Fixed iOS crush issue." />
     <MESSAGE value="Migrated to null safety" />
-    <option name="LAST_COMMIT_MESSAGE" value="Migrated to null safety" />
+    <MESSAGE value="Fixed iOS crush issue." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed iOS crush issue." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="238" y="23" key="CommitChangelistDialog2" timestamp="1617539005805">
-      <screen x="0" y="23" width="1440" height="811" />
+    <state x="126" y="125" width="1200" height="569" key="DiffContextDialog" timestamp="1632748883655">
+      <screen x="0" y="25" width="1440" height="805" />
     </state>
-    <state x="238" y="23" key="CommitChangelistDialog2/0.23.1440.811@0.23.1440.811" timestamp="1617539005805" />
-    <state x="144" y="93" key="DiffContextDialog" timestamp="1617538530027">
-      <screen x="0" y="23" width="1440" height="811" />
+    <state x="126" y="125" width="1200" height="569" key="DiffContextDialog/0.25.1440.805@0.25.1440.805" timestamp="1632748883655" />
+    <state width="1358" height="497" key="GridCell.Tab.0.bottom" timestamp="1638774782781">
+      <screen x="0" y="25" width="1440" height="801" />
     </state>
-    <state x="144" y="93" key="DiffContextDialog/0.23.1440.811@0.23.1440.811" timestamp="1617538530027" />
-    <state width="1398" height="473" key="GridCell.Tab.0.bottom" timestamp="1617517888559">
-      <screen x="0" y="23" width="1440" height="811" />
+    <state width="1358" height="497" key="GridCell.Tab.0.bottom/0.25.1440.801@0.25.1440.801" timestamp="1638774782781" />
+    <state width="1358" height="193" key="GridCell.Tab.0.bottom/0.25.1440.805@0.25.1440.805" timestamp="1632748476764" />
+    <state width="1358" height="497" key="GridCell.Tab.0.center" timestamp="1638774782749">
+      <screen x="0" y="25" width="1440" height="801" />
     </state>
-    <state width="1398" height="473" key="GridCell.Tab.0.bottom/0.23.1440.811@0.23.1440.811" timestamp="1617517888559" />
-    <state width="1398" height="473" key="GridCell.Tab.0.center" timestamp="1617517888558">
-      <screen x="0" y="23" width="1440" height="811" />
+    <state width="1358" height="497" key="GridCell.Tab.0.center/0.25.1440.801@0.25.1440.801" timestamp="1638774782749" />
+    <state width="1358" height="193" key="GridCell.Tab.0.center/0.25.1440.805@0.25.1440.805" timestamp="1632748476762" />
+    <state width="1358" height="497" key="GridCell.Tab.0.left" timestamp="1638774782732">
+      <screen x="0" y="25" width="1440" height="801" />
     </state>
-    <state width="1398" height="473" key="GridCell.Tab.0.center/0.23.1440.811@0.23.1440.811" timestamp="1617517888558" />
-    <state width="1398" height="473" key="GridCell.Tab.0.left" timestamp="1617517888558">
-      <screen x="0" y="23" width="1440" height="811" />
+    <state width="1358" height="497" key="GridCell.Tab.0.left/0.25.1440.801@0.25.1440.801" timestamp="1638774782732" />
+    <state width="1358" height="193" key="GridCell.Tab.0.left/0.25.1440.805@0.25.1440.805" timestamp="1632748476762" />
+    <state width="1358" height="497" key="GridCell.Tab.0.right" timestamp="1638774782760">
+      <screen x="0" y="25" width="1440" height="801" />
     </state>
-    <state width="1398" height="473" key="GridCell.Tab.0.left/0.23.1440.811@0.23.1440.811" timestamp="1617517888558" />
-    <state width="1398" height="473" key="GridCell.Tab.0.right" timestamp="1617517888559">
-      <screen x="0" y="23" width="1440" height="811" />
+    <state width="1358" height="497" key="GridCell.Tab.0.right/0.25.1440.801@0.25.1440.801" timestamp="1638774782760" />
+    <state width="1358" height="193" key="GridCell.Tab.0.right/0.25.1440.805@0.25.1440.805" timestamp="1632748476763" />
+    <state x="326" y="146" key="Vcs.Push.Dialog.v2" timestamp="1632748624199">
+      <screen x="0" y="25" width="1440" height="805" />
     </state>
-    <state width="1398" height="473" key="GridCell.Tab.0.right/0.23.1440.811@0.23.1440.811" timestamp="1617517888559" />
-    <state x="422" y="140" key="RollbackChangesDialog" timestamp="1617684432918">
-      <screen x="0" y="25" width="1440" height="813" />
+    <state x="326" y="146" key="Vcs.Push.Dialog.v2/0.25.1440.805@0.25.1440.805" timestamp="1632748624199" />
+    <state x="426" y="196" width="597" height="490" key="find.popup" timestamp="1638770852344">
+      <screen x="0" y="25" width="1440" height="801" />
     </state>
-    <state x="422" y="140" key="RollbackChangesDialog/0.25.1440.813@0.25.1440.813" timestamp="1617684432918" />
-    <state x="320" y="170" key="Vcs.Push.Dialog.v2" timestamp="1617684484922">
-      <screen x="0" y="25" width="1440" height="813" />
-    </state>
-    <state x="320" y="168" key="Vcs.Push.Dialog.v2/0.23.1440.811@0.23.1440.811" timestamp="1617539007589" />
-    <state x="320" y="170" key="Vcs.Push.Dialog.v2/0.25.1440.813@0.25.1440.813" timestamp="1617684484922" />
-    <state x="610" y="186" width="615" height="490" key="find.popup" timestamp="1610609541576">
-      <screen x="0" y="23" width="1440" height="811" />
-    </state>
-    <state x="610" y="186" width="615" height="490" key="find.popup/0.23.1440.811@0.23.1440.811" timestamp="1610609541576" />
+    <state x="426" y="196" width="597" height="490" key="find.popup/0.25.1440.801@0.25.1440.801" timestamp="1638770852344" />
   </component>
 </project>

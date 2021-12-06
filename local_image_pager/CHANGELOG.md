@@ -1,3 +1,6 @@
+## [0.6.1] - 6 December 2022
+Updated android api version to 30(Oreo).
+
 ## [0.6.1] - 27 September 2021
 Fixed iOS crush issue.
 
